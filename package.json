@@ -1,0 +1,20 @@
+{
+  "name": "whitespace-between-template-nodes",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@angular-eslint/template-parser": "^22.1.0",
+    "@angular-eslint/test-utils": "^22.1.0",
+    "@types/node": "^26.1.1",
+    "@typescript-eslint/utils": "^8.65.0",
+    "eslint": "^10.7.0",
+    "typescript": "~5.9.3",
+    "vitest": "^4.1.10"
+  }
+}
