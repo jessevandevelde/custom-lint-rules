@@ -199,6 +199,13 @@ ruleTester.run('padding-line-between-template-nodes', rule, {
       errors: errors(),
     },
     {
+      name: 'autofix preserves semicolon between track let and element',
+      code: '@let _track = track();\n<div class="search-result">\n\n</div>',
+      output:
+        '@let _track = track();\n\n<div class="search-result">\n\n</div>',
+      errors: errors(),
+    },
+    {
       name: 'element followed by let is still checked',
       code: '<div>\n  <span>one</span>\n  @let foo = 1;\n</div>',
       output: '<div>\n  <span>one</span>\n\n  @let foo = 1;\n</div>',
