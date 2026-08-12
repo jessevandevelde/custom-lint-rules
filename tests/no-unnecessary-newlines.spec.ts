@@ -1,7 +1,7 @@
 import { RuleTester } from '@angular-eslint/test-utils';
 import * as templateParser from '@angular-eslint/template-parser';
 
-import rule from '../src/rules/no-unnecessary-newlines.ts';
+import rule from '../src/rules/no-unnecessary-newlines.js';
 
 const MESSAGE_ID = 'UNNECESSARY_NEWLINE' as const;
 const error = { messageId: MESSAGE_ID };
